@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<ui:composition template="/templates/page-template.xhtml">
+
+	<ui:define name="pageContent">
+
+		<p:panel header="Kalkulator"> 
+
+			<p:messages id="msg" />
+
+			<h:form id="formularz">
+				<h:panelGrid columns="2" cellpadding="5" styleClass="bottom-space">
+					<p:outputLabel for="idkwota" value="#{txtCalc.valuekwota}:" />
+		
+					<p:inputText id="idkwota" value="#{kredytBB.kwota}" required="true"
+					requiredMessage="Kwota: #{txtCalcErr.calcParamRequired}"
+					converterMessage="Kwota: #{txtCalcErr.calcParamIncorrect}" />
+					
+					<p:outputLabel for="idczas" value="#{txtCalc.valueczas}:" />
+		
+					<p:inputText id="idczas" value="#{kredytBB.czas}" required="true"
+					requiredMessage="Czas: #{txtCalcErr.calcParamRequired}"
+					converterMessage="Czas: #{txtCalcErr.calcParamIncorrect}" />
+					
+					<p:outputLabel for="idprocent" value="#{txtCalc.valueprocent}:" />
+		
+					<p:inputText id="idprocent" value="#{kredytBB.procent}" required="true"
+					requiredMessage="Procent: #{txtCalcErr.calcParamRequired}"
+					converterMessage="Procent: #{txtCalcErr.calcParamIncorrect}" />
+					
+					<p:commandButton value="Oblicz" action="#{kredytBB.calc()}" update="msg" />
+					
+					
+				
+			</h:panelGrid>
+			</h:form>
+
+		</p:panel>
+
+	</ui:define>
+
+</ui:composition>
+</html>
