@@ -4,8 +4,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd"
     version="2.3">
-
-		<application>
+	<application>
 		<resource-bundle>
 			<base-name>resources.textMain</base-name>
 			<var>txtMain</var>
@@ -22,6 +21,4 @@
 			<default-locale>pl</default-locale>
 		</locale-config>
 	</application>
-
-
 </faces-config>
