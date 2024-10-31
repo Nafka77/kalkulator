@@ -16,28 +16,25 @@
 			<h:form id="formularz">
 				<h:panelGrid columns="2" cellpadding="5" styleClass="bottom-space">
 					<p:outputLabel for="idkwota" value="#{txtCalc.valuekwota}:" />
-		
+	
 					<p:inputText id="idkwota" value="#{kredytBB.kwota}" required="true"
 					requiredMessage="Kwota: #{txtCalcErr.calcParamRequired}"
 					converterMessage="Kwota: #{txtCalcErr.calcParamIncorrect}" />
 					
 					<p:outputLabel for="idczas" value="#{txtCalc.valueczas}:" />
-		
+	
 					<p:inputText id="idczas" value="#{kredytBB.czas}" required="true"
 					requiredMessage="Czas: #{txtCalcErr.calcParamRequired}"
 					converterMessage="Czas: #{txtCalcErr.calcParamIncorrect}" />
 					
 					<p:outputLabel for="idprocent" value="#{txtCalc.valueprocent}:" />
-		
+	
 					<p:inputText id="idprocent" value="#{kredytBB.procent}" required="true"
 					requiredMessage="Procent: #{txtCalcErr.calcParamRequired}"
 					converterMessage="Procent: #{txtCalcErr.calcParamIncorrect}" />
 					
 					<p:commandButton value="Oblicz" action="#{kredytBB.calc()}" update="msg" />
-					
-					
-				
-			</h:panelGrid>
+				</h:panelGrid>
 			</h:form>
 
 		</p:panel>

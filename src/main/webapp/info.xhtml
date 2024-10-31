@@ -9,13 +9,18 @@
 <ui:composition template="/templates/main-template.xhtml">
 
 	<ui:define name="title">
-		#{txtMain.projectName} - #{txtMain.projectTopics}
+		Informacje
 	</ui:define>
 
 	<ui:define name="content">
-		<div class="bottom-space">${txtMain.sampleText}</div>
-		<ui:insert name="pageContent"></ui:insert>
+		<p:panel styleClass="bottom-space">
+			<h:graphicImage name="img/java.png" library="template" />
+			Pusta niespodzianka :)
+			<h:form>
+				<h:commandLink value="Strona główna" action="index" />
+			</h:form>
+		</p:panel>
 	</ui:define>
-	
+
 </ui:composition>
 </html>
