@@ -10,11 +10,7 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.jboss.ide.eclipse.as.core.server.runtime.runtimeTarget/WildFly 27.0 Runtime">
 		<attributes>
-<<<<<<< HEAD
 			<attribute name="owner.project.facets" value="jst.jsf;jst.web"/>
-=======
-			<attribute name="owner.project.facets" value="jst.web;jst.jsf"/>
->>>>>>> 324448631305d0d35725c8c77cec2bd1f4cb9d7d
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="build/classes"/>
